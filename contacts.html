@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ОАО Строитель</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo" id="hello-vue">
+            {{ message }}
+        </div>
+        <nav class="nav">
+            <ul class="nav_list"><a class="nav_list_link" href="index.html">О компании</a></ul>
+            <ul class="nav_list"><a class="nav_list_link" href="our_work.html">Наша работа</a></ul>
+            <ul class="nav_list"><a class="nav_list_link" href="#">Контакты</a></ul>
+            <ul class="nav_list"><a class="nav_list_link" href="http://construction/admin">Войти</a></ul>
+        </nav>
+    </header>
+
+    <img class="header_image" src="images/header-pic.jpg">
+
+    <div class="contacts">
+        <p class="contact_item">Контакты</p>
+        <p class="contact_item">stroi-oshm@mail.ru </p>
+        <br>
+        <p class="contact_item">
+            <p>ДИРЕКТОР</p>
+            <p>Варно Дмитрий Иванович</p>
+            <p>раб.тел. 8(01593) 4-41-33</p>
+        </p>
+        <br>
+        <p class="contact_item">
+            <p>ПРИЕМНАЯ</p>
+            <p>раб.тел. 8(01593) 4-43-33</p>
+            <p>раб.тел/фах 8(01593) 4-04-56</p>
+        </p>
+        <br>
+
+        <p class="contact_item">
+            <p>Адрес электронной почты: stroi-oshm@mail.ru</p>
+
+            <p>Директор: Варно Дмитрий Иванович (действует на основании Устава)</p>
+
+            <p>Гл.бухгалтер: Подрез Наталья Ричардовна</p>
+        </p>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>

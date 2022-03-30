@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ОАО Строитель</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo" id="hello-vue">
+            {{ message }}
+        </div>
+        <nav class="nav">
+            <ul class="nav_list"><a class="nav_list_link" href="index.html">О компании</a></ul>
+            <ul class="nav_list"><a class="nav_list_link" href="#">Наша работа</a></ul>
+            <ul class="nav_list"><a class="nav_list_link" href="contacts.html">Контакты</a></ul>
+            <ul class="nav_list"><a class="nav_list_link" href="http://construction/admin">Войти</a></ul>
+        </nav>
+    </header>
+
+    <img class="header_image" src="images/header-pic.jpg">
+
+    <h2 class="title">Наша работа</h2>
+
+    <div class="work_item">
+        <p>Открытие объекта АЗС в г.Солигорск после реконструкции</p>
+        <p>генподрядчик ОАО "Строитель"  2020 год</p>
+
+        <img src="images/shop.jpg" alt="" class="image">
+        <br>
+        <img src="images/gnom.jpg" alt="" class="image">
+    </div>
+
+    <div class="work_item">
+        <p>Энергоэффективная реконструкция ясли-сада № 3 г.Ошмяны
+    
+            генподрядчик ОАО "Строитель"</p>
+        
+        <img src="images/kindergarden.jpg" alt="" class="image">
+    </div>
+
+    <div class="work_item">
+        <p>Логистический комплекс/ Каменный Лог/ сдача   - январь 2019 год</p>
+        <img src="images/logcenter.jpg" alt="" class="image">
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>
