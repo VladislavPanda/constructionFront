@@ -28,7 +28,7 @@
     <h2 class="title">Оставить заявку</h2>
 
     <div class="bid_form_container">
-        <form>
+        <form id="form" onsubmit="handler(); return false;">
             <ul class="form-style-1">
                 <li><label>Ваше имя <span class="required">*</span></label><input type="text" name="name" class="field-divided" /></li>
                 <li>
@@ -37,7 +37,7 @@
                 </li>
                 <li>
                     <label>Выберите категорию работ</label>
-                    <select name="work_type" class="field-select">
+                    <select name="category" class="field-select">
                     <option value="construction">Строительство</option>
                     <option value="maintenance">Обслуживание объектов</option>
                     <option value="project">Проектирование</option>
@@ -48,10 +48,16 @@
                     <textarea name="message" id="field5" class="field-long field-textarea"></textarea>
                 </li>
                 <li>
-                    <input type="submit" name="bid_submit" value="Отправить" />
+                    <!--<input type="submit" name="bid_submit" value="Отправить" />-->
+                    <button type="submit">Отправить</button>
                 </li>
+                <div class="response">
+                    <span></span>
+                    <div class="response-body"><span id="info"></span></div>
+                </div>
             </ul>
         </form>
+        
     </div>
     
     <script src="https://unpkg.com/vue@next"></script>
